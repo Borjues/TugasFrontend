@@ -46,13 +46,17 @@
        <div class="paybtn">
         <li><input type="radio" name="payment" value="creditCard"> Credit Card</li>
         <li><input type="radio" name="payment" value="paypal"> PayPal</li>
-        <li><input type="radio" name="payment" value="bankTransfer"> Bank Transfer</li>
+        <li><input type="radio" name="payment" value="Dana"> Dana</li>
        </div>
-      <button id="confirmPayment">Confirm Payment</button>
+       <button id="confirmPayment" class="btn btn-success mt-3">Confirm Payment</button>
     </div>
   </div>
 </div>
 
+<div id="alertMessage" class="alert alert-success mt-3 d-none alert-dismissible fade show" role="alert">
+  Subscription telah dibayar!
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 
     <main class="container">
       <div class="grid">
@@ -112,38 +116,6 @@
         </section>
       </div>
     </main>
-
-    <section aria-label="Subscribe example">
-      <div class="container">
-        <article>
-          <hgroup>
-            <h2>Join Our Community</h2>
-            <h3>Subscribe for the latest lifestyle updates</h3>
-          </hgroup>
-          <form class="grid">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="First Name"
-              aria-label="First Name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              aria-label="Email"
-              required
-            />
-            <button type="submit" onclick="event.preventDefault()">
-              Subscribe
-            </button>
-          </form>
-        </article>
-      </div>
-    </section>
 
     <footer class="container">
       <small

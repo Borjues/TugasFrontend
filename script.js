@@ -22,9 +22,25 @@ window.onclick = function(event) {
   }
 }
 
-/* Payment btn */
+/* Payment */
 
 paymentBtn.onclick = function(event) {
   event.preventDefault();
   options.style.display = "block";
 }
+
+/* Subscribed */
+
+document.addEventListener("DOMContentLoaded", function() {
+  const confirmPaymentButton = document.getElementById("confirmPayment");
+  const subscribeButton = document.getElementById("subscribeBtn");
+  const alertMessage = document.getElementById("alertMessage");
+
+  confirmPaymentButton.addEventListener("click", function() {
+   
+    alertMessage.classList.remove("d-none");
+    subscribeButton.textContent = "Subscribed";
+    subscribeButton.disabled = true; 
+  });
+});
+
