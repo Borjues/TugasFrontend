@@ -20,16 +20,25 @@
     />
   </head>
   <body>
-    <nav class="container-fluid">
+    <nav class="container-fluid fixed-top">
       <ul>
-        <li><strong>Lifestyle Vibes</strong></li>
+        <li>
+          <strong>
+            <img src="https://www.jubbas.com/cdn/shop/files/J_Lifestyle_Logo_Jlifestyle-logo-Landscape_2000x.png?v=1707216401" alt="Logo" class="logo" />
+          </strong>
+        </li>
       </ul>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#" role="button" id="subscribeBtn">Subscribe</a></li>
-      </ul>
+      <button class="navbar-toggler" id="hamburger" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav-links" class="overlay-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" role="button" id="subscribeBtn">Subscribe</a></li>
+        </ul>
+      </div>
     </nav>
 
 <div id="subscribeModal" class="modal"> <!--point pengganti-->
@@ -113,38 +122,6 @@
         </section>
       </div>
     </main>
-
-    <section aria-label="Subscribe example">
-      <div class="container">
-        <article>
-          <hgroup>
-            <h2>Stay in the Loop</h2>
-            <h3>Subscribe to Our Newsletter</h3>
-          </hgroup>
-          <form class="grid">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="First Name"
-              aria-label="First Name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              aria-label="Email"
-              required
-            />
-            <button type="submit" onclick="event.preventDefault()">
-              Subscribe
-            </button>
-          </form>
-        </article>
-      </div>
-    </section>
 
     <footer class="container">
       <small
